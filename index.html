@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umar Imran - Web Designer & Developer</title>
+    <link rel="icon" type="image/png" href="Images/UI_LOGO.png" />
+    <meta name="description"
+        content="Portfolio of Umar Imran, a product designer crafting user-centric design with pixel-perfect precision.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="nav-brand">
+                <img src="Images/UI_LOGO.png" alt="Umar Imran Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#projects">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#contact" class="btn-nav">Hire Me <i class="fas fa-arrow-right"></i></a>
+
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Hero Section (Bento Grid) -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="bento-grid">
+
+                <!-- Left: Profile Card -->
+                <div class="card profile-card reveal">
+                    <div class="profile-img-wrapper">
+                        <div class="profile-bg-circle"></div>
+                        <!-- Provide a high quality portrait here -->
+                        <img src="Images/UMAR.jpg" alt="Umar Imran"
+                            style="background-color: var(--bg-main); border-radius: 50%;">
+                    </div>
+                    <h1 class="profile-name">Umar Imran</h1>
+                    <p class="profile-role" style="margin-bottom: 1rem;">I am a Web Designer based in Pakistan.</p>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 2rem;">Passionate about
+                        creating modern, dynamic, and beautiful web experiences. I love turning complex problems into
+                        elegant, intuitive, and pixel-perfect digital solutions.</p>
+                    <div class="social-icons">
+                        <a href="mailto:umarimran2504@gmail.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/umarimran22/" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://github.com/UMAR-25-UMR" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Top: Intro Card -->
+                <div class="card intro-card reveal">
+                    <p class="intro-greeting">Hello There!</p>
+                    <h2 class="intro-title">I'm Umar Imran, a Web Developer crafting modern, user-centric digital
+                        experiences with clean design and pixel-perfect precision.</h2>
+                    <div class="status-badge">
+                        <span class="status-dot"></span> Available for Freelancing
+                    </div>
+                    <a id="download-cv-btn" href="UMAR's CV Tech.pdf" download="Umar_Imran_CV.pdf"
+                        class="btn-primary">Download CV <i class="fas fa-download"></i></a>
+                </div>
+
+                <!-- Right Bottom: Experience / Companies Card -->
+                <div id="experience" class="card experience-card reveal">
+                    <h3 class="experience-title">Experience</h3>
+
+                    <div class="exp-list">
+                        <div class="exp-item">
+                            <div>
+                                <h4 class="exp-role">Junior Developer</h4>
+                                <span class="exp-company">Trimline Group</span>
+                            </div>
+                            <span class="exp-date">March 2025 - August 2025</span>
+                        </div>
+                        <div class="exp-item">
+                            <div>
+                                <h4 class="exp-role">Polymer Product Research Assistant</h4>
+                                <span class="exp-company">Trimline Group</span>
+                            </div>
+                            <span class="exp-date">July 2025 - August 2025</span>
+                        </div>
+                        <div class="exp-item">
+                            <div>
+                                <h4 class="exp-role">Administrator – Aptitude Department</h4>
+                                <span class="exp-company">Anees Hussain Coaching Center, Block-H</span>
+                            </div>
+                            <span class="exp-date">October 2024 - February 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about-section" class="about-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">A little bit about who I am and what drives me.</p>
+            </div>
+            <div class="about-content reveal">
+                <p class="about-bio">
+                    I'm a passionate <span class="about-highlight">Web Designer &amp; Developer</span> with
+                    <span class="about-highlight">1+ years</span> of experience crafting high-performance web
+                    applications. I specialize in building pixel-perfect, accessible interfaces with clean,
+                    maintainable code.
+                </p>
+                <p class="about-bio">
+                    When I'm not coding, you'll find me exploring new technologies, contributing to design
+                    communities, and pushing the boundaries of what's possible on the web.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">
+                            <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+                        </div>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">
+                            <span class="stat-number" data-target="2">0</span><span class="stat-suffix">+</span>
+                        </div>
+                        <span class="stat-label">Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">
+                            <span class="stat-number" data-target="1">0</span><span class="stat-suffix">+</span>
+                        </div>
+                        <span class="stat-label">Years</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="expertise">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">My Expertise</h2>
+                <p class="section-subtitle">A diverse set of skills to build end-to-end digital experiences.</p>
+            </div>
+
+            <div class="skills-slider-container reveal">
+                <div class="skills-slider">
+                    <!-- Original List -->
+                    <div class="skill-card"><i class="fab fa-html5 skill-icon"></i>
+                        <h3 class="skill-name">HTML</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-css3-alt skill-icon"></i>
+                        <h3 class="skill-name">CSS</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-js skill-icon"></i>
+                        <h3 class="skill-name">JS</h3>
+                    </div>
+                    <div class="skill-card"><i class="fas fa-wind skill-icon"></i>
+                        <h3 class="skill-name">Tailwind CSS</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-bootstrap skill-icon"></i>
+                        <h3 class="skill-name">Bootstrap</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-react skill-icon"></i>
+                        <h3 class="skill-name">React.js</h3>
+                    </div>
+                    <div class="skill-card"><i class="fas fa-database skill-icon"></i>
+                        <h3 class="skill-name">SQL</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-wordpress skill-icon"></i>
+                        <h3 class="skill-name">WordPress</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-figma skill-icon"></i>
+                        <h3 class="skill-name">Figma</h3>
+                    </div>
+                    <div class="skill-card"><i class="fas fa-code skill-icon"></i>
+                        <h3 class="skill-name">C++</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-python skill-icon"></i>
+                        <h3 class="skill-name">Python</h3>
+                    </div>
+                    <div class="skill-card"><i class="fas fa-robot skill-icon"></i>
+                        <h3 class="skill-name">AI</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-github skill-icon"></i>
+                        <h3 class="skill-name">GitHub</h3>
+                    </div>
+                    <div class="skill-card"><i class="fas fa-caret-up skill-icon"></i>
+                        <h3 class="skill-name">Vercel</h3>
+                    </div>
+                    <div class="skill-card"><i class="fas fa-server skill-icon"></i>
+                        <h3 class="skill-name">Netlify</h3>
+                    </div>
+
+                    <!-- Duplicated for Infinite Scrolling -->
+                    <div class="skill-card"><i class="fab fa-html5 skill-icon"></i>
+                        <h3 class="skill-name">HTML</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-css3-alt skill-icon"></i>
+                        <h3 class="skill-name">CSS</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-js skill-icon"></i>
+                        <h3 class="skill-name">JS</h3>
+                    </div>
+                    <div class="skill-card"><i class="fas fa-wind skill-icon"></i>
+                        <h3 class="skill-name">Tailwind CSS</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-bootstrap skill-icon"></i>
+                        <h3 class="skill-name">Bootstrap</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-react skill-icon"></i>
+                        <h3 class="skill-name">React.js</h3>
+                    </div>
+                    <div class="skill-card"><i class="fas fa-database skill-icon"></i>
+                        <h3 class="skill-name">SQL</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-wordpress skill-icon"></i>
+                        <h3 class="skill-name">WordPress</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-figma skill-icon"></i>
+                        <h3 class="skill-name">Figma</h3>
+                    </div>
+                    <div class="skill-card"><i class="fas fa-code skill-icon"></i>
+                        <h3 class="skill-name">C++</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-python skill-icon"></i>
+                        <h3 class="skill-name">Python</h3>
+                    </div>
+                    <div class="skill-card"><i class="fas fa-robot skill-icon"></i>
+                        <h3 class="skill-name">AI</h3>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-github skill-icon"></i>
+                        <h3 class="skill-name">GitHub</h3>
+                    </div>
+                    <div class="skill-card"><i class="fas fa-caret-up skill-icon"></i>
+                        <h3 class="skill-name">Vercel</h3>
+                    </div>
+                    <div class="skill-card"><i class="fas fa-server skill-icon"></i>
+                        <h3 class="skill-name">Netlify</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works & Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Works & Projects</h2>
+                <p class="section-subtitle">Check out some of my design projects, meticulously crafted with love and
+                    dedication, each one reflecting the passion and soul I poured into every detail.</p>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-links">
+                        <a href="https://github.com/UMAR-25-UMR/Trimline-Group-LLC-website-by-UMAR" target="_blank"
+                            title="GitHub Repo"><i class="fab fa-github"></i></a>
+                        <a href="https://trimlineco.com/" target="_blank" title="Live Preview"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="project-img-box">
+                        <img src="Images/Trimline Group.png" alt="Trimline Group Website">
+                    </div>
+                    <h3 class="project-title">Trimline Group Website</h3>
+                    <p class="project-desc">A live modern corporate website built for a polymer supply company. It
+                        features a
+                        responsive design, clean UI, service sections, product information, and optimized performance to
+                        showcase the company's capabilities and industrial solutions.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-links">
+                        <a href="https://github.com/UMAR-25-UMR/Eyeonic" target="_blank" title="GitHub Repo"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://eyeonic-eweb.netlify.app/" target="_blank" title="Live Preview"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="project-img-box">
+                        <img src="Images/Eyeonic.png" alt="Eyeonic E-Commerce">
+                    </div>
+                    <h3 class="project-title">Eyeonic E-Commerce Platform</h3>
+                    <p class="project-desc">A e-commerce website designed for an eyewear brand. The site includes
+                        product listings, clean product showcases, responsive layouts, and a user-friendly shopping
+                        interface to improve the online browsing and purchasing experience.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-links">
+                        <a href="https://github.com/UMAR-25-UMR/Trimline-react-app-by-umar" target="_blank"
+                            title="GitHub Repo"><i class="fab fa-github"></i></a>
+                        <a href="https://trimline-react-app-by-umar.vercel.app/" target="_blank" title="Live Preview"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="project-img-box">
+                        <img src="Images/Trimline Group React.png" alt="Trimline Group React App">
+                    </div>
+                    <h3 class="project-title">Trimline Group React App</h3>
+                    <p class="project-desc">Built a responsive polymer supply company website with product showcase,
+                        migrated to React.js for scalability, and deployed via WordPress to improve SEO and visibility.
+                    </p>
+                    <div class="project-tags">
+                        <span>React.js</span>
+                        <span>Tailwind CSS</span>
+                        <span>Google Analytics</span>
+                        <span>Formspree API</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal">
+                    <div class="project-links">
+                        <a href="https://github.com/UMAR-25-UMR/UMR-RESTAURANT" target="_blank" title="GitHub Repo"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://umr-restaurant.vercel.app/" target="_blank" title="Live Preview"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="project-img-box">
+                        <img src="Images/umr restaurant.png" alt="UMR Restaurant">
+                    </div>
+                    <h3 class="project-title">UMR Restaurant</h3>
+                    <p class="project-desc">Developed a modern responsive restaurant website featuring an interactive
+                        menu, smooth UI, and optimized user experience for seamless food browsing.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Formspree API</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal">
+                    <div class="project-links">
+                        <a href="https://github.com/UMAR-25-UMR/Horizon-Foods-by-Umar" target="_blank"
+                            title="GitHub Repo"><i class="fab fa-github"></i></a>
+                        <a href="https://horizon-foods-by-umar.netlify.app/" target="_blank" title="Live Preview"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="project-img-box">
+                        <img src="Images/Horizon foods.png" alt="Horizon Foods">
+                    </div>
+                    <h3 class="project-title">Horizon Foods</h3>
+                    <p class="project-desc">Developed a responsive corporate food brand website showcasing frozen food
+                        products, services, and contact details with a clean, structured UI and modern navigation.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Formspree API</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card reveal">
+                    <div class="project-links">
+                        <a href="https://github.com/UMAR-25-UMR/Masjid-Darussalam" target="_blank"
+                            title="GitHub Repo"><i class="fab fa-github"></i></a>
+                        <a href="https://masjid-darussalam.vercel.app/" target="_blank" title="Live Preview"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="project-img-box">
+                        <img src="Images/Masjid Darussalam.png" alt="Masjid Darussalam">
+                    </div>
+                    <h3 class="project-title">Masjid Darussalam</h3>
+                    <p class="project-desc">A responsive mosque website designed to provide prayer timings,
+                        announcements, and community information. The platform helps visitors stay updated with daily
+                        prayers and mosque activities through a simple, accessible interface focused on community
+                        engagement.
+
+                    </p>
+                    <div class="project-tags">
+                        <span>Typescript</span>
+                        <span>Tailwind CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card reveal">
+                    <div class="project-links">
+                        <a href="https://github.com/UMAR-25-UMR/powerpresent-dashboard-umr" target="_blank"
+                            title="GitHub Repo"><i class="fab fa-github"></i></a>
+                        <a href="https://powerpresent-dashboard-umr.netlify.app/" target="_blank"
+                            title="Live Preview"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="project-img-box">
+                        <img src="Images/Powerpresent.png" alt="Powerpresent.ai Dashboard">
+                    </div>
+                    <h3 class="project-title">Powerpresent.ai Dashboard</h3>
+                    <p class="project-desc">Developed a responsive dashboard for PowerPresent AI featuring structured
+                        analytics, clean UI components, and interactive data sections for improved usability.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Project 8 
+                <div class="project-card reveal">
+                    <div class="project-links">
+                        <a href="https://github.com/UMAR-25-UMR" target="_blank" title="GitHub Repo"><i
+                                class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" title="Live Preview"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="project-img-box">
+                        <img src="Images/project8.jpg" alt="E-Commerce Store">
+                    </div>
+                    <h3 class="project-title">E-Commerce Store</h3>
+                    <p class="project-desc">A full-featured online store with product filtering, cart management, secure
+                        checkout, and an admin panel for order tracking.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Tailwind CSS</span>
+                        <span>Firebase</span>
+                    </div>
+                </div> -->
+
+                <!-- Project 9 
+                <div class="project-card reveal">
+                    <div class="project-links">
+                        <a href="https://github.com/UMAR-25-UMR" target="_blank" title="GitHub Repo"><i
+                                class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" title="Live Preview"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="project-img-box">
+                        <img src="Images/project9.jpg" alt="Weather Dashboard">
+                    </div>
+                    <h3 class="project-title">Weather Dashboard</h3>
+                    <p class="project-desc">An interactive weather app with live forecasts, location-based search,
+                        animated
+                        weather icons, and a 7-day forecast chart.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>OpenWeather API</span>
+                        <span>Chart.js</span>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to collaborate on your next project? Get in touch with me today.</p>
+            </div>
+
+            <div class="contact-container reveal">
+                <div class="contact-info">
+                    <h3>Get in touch</h3>
+                    <p>Whether you have a question, want to start a project, or simply want to say hi, my inbox is
+                        always open.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:umarimran2504@gmail.com">umarimran2504@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+923042847550">+92 304 2847550</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Karachi, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formspree Integration -->
+                <!-- Replace 'YOUR_FORM_ID' with your actual Formspree ID (e.g., https://formspree.io/f/xbjv...) -->
+                <form id="contactForm" action="https://formspree.io/f/mwvjvkbb" method="POST" class="contact-form">
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">Send Message
+                        <i class="fas fa-paper-plane"></i></button>
+
+                    <!-- Success Message -->
+                    <div id="formMessage" class="form-success-msg">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Message Sent!</strong>
+                            <p>Thank you for reaching out — I'll be in touch shortly.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Umar Imran. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
