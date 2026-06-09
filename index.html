@@ -22,12 +22,12 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LLN6BKBKQ"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-2LLN6BKBKQ');
-</script>
+        gtag('config', 'G-2LLN6BKBKQ');
+    </script>
 
 </head>
 
@@ -43,6 +43,8 @@
             <ul class="nav-links">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about-section">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certificates">Certificates</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#projects">Works</a></li>
@@ -178,6 +180,172 @@
                 </div>
 
             </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic background and additional training.</p>
+            </div>
+            <div class="education-card reveal">
+                <!-- Left: Main Education -->
+                <div class="edu-col edu-main">
+                    <span class="edu-label">EDUCATION:</span>
+                    <h3 class="edu-degree">Bachelor of Science in Computer Science</h3>
+                    <p class="edu-university">Mohammad Ali Jinnah University, Karachi</p>
+                    <p class="edu-duration">SPRING 2023 - SPRING 2027</p>
+                </div>
+
+                <!-- Divider -->
+                <div class="edu-divider"></div>
+
+                <!-- Right: Extra Education -->
+                <div class="edu-col edu-extra">
+                    <span class="edu-label">EXTRA-EDUCATION:</span>
+                    <p class="edu-extra-item">Aptech Learning Institute</p>
+                    <p class="edu-extra-item"><strong>(CPISM) 5 Month</strong></p>
+                    <p class="edu-extra-item">Project: "Eyeonic" E-commerce WebApp</p>
+                    <p class="edu-extra-item">Project of the Month and Semester Winner</p>
+                    <p class="edu-duration">JULY - DECEMBER</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Certificates</h2>
+                <p class="section-subtitle">Credentials that validate my skills and commitment to continuous learning.</p>
+            </div>
+
+            <div class="cert-slider-wrapper reveal">
+                <!-- Prev Arrow -->
+                <button class="cert-arrow cert-arrow-prev" id="certPrev" aria-label="Previous certificate">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <!-- Slides Track -->
+                <div class="cert-track-outer">
+                    <div class="cert-track" id="certTrack">
+
+                        <!-- Certificate 1 -->
+                        <div class="cert-slide">
+                            <div class="cert-img-box">
+                                <img src="certificates/Wordpress certificate.jpg" alt="WordPress Development Certificate"
+                                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                                <div class="cert-img-fallback">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <span class="cert-tag">Udemy</span>
+                                <h3 class="cert-title">WordPress Website Developer Course</h3>
+                                <p class="cert-desc">Completed a WordPress Website Development course, learning website creation, customization, plugins, themes, hosting, domain setup, and live deployment.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Certificate 2 -->
+                        <div class="cert-slide">
+                            <div class="cert-img-box">
+                                <img src="certificates/hp certificate.png" alt="HP Certificate"
+                                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                                <div class="cert-img-fallback">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <span class="cert-tag">HP Life</span>
+                                <h3 class="cert-title">AI for Biginners</h3>
+                                <p class="cert-desc">Completed an Artificial Intelligence course, gaining knowledge of AI fundamentals, real-world applications, data's role in AI, business use cases, and ethical considerations.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Certificate 3 -->
+                        <div class="cert-slide">
+                            <div class="cert-img-box">
+                                <img src="certificates/uniathena.jfif" alt="uniathena Certificate"
+                                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                                <div class="cert-img-fallback">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <span class="cert-tag">UniAthena</span>
+                                <h3 class="cert-title">Basics of Python</h3>
+                                <p class="cert-desc">Completed a Basics of Python course, gaining foundational knowledge of Python programming, including core syntax, variables, data types, control structures, functions, and problem-solving techniques.
+                            </p>
+                            </div>
+                        </div>
+
+                        <!-- Certificate 4 -->
+                        <div class="cert-slide">
+                            <div class="cert-img-box">
+                                <img src="certificates/simplilearn certificate.jfif" alt="Simplilearn Certificate"
+                                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                                <div class="cert-img-fallback">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <span class="cert-tag">Simplilearn</span>
+                                <h3 class="cert-title">Build Website with AI</h3>
+                                <p class="cert-desc">Completed a Build Website with AI course from Simplilearn SkillUp, demonstrating skills in using AI tools for modern website development and enhancement.
+                            </p>
+                            </div>
+                        </div>
+
+                        <!-- Certificate 5 -->
+                        <div class="cert-slide">
+                            <div class="cert-img-box">
+                                <img src="certificates/Eyeonic certificate.jpeg" alt="Web Designing Certificate"
+                                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                                <div class="cert-img-fallback">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <span class="cert-tag">Aptech</span>
+                                <h3 class="cert-title">Aptech Web Designing Certificate</h3>
+                                <p class="cert-desc">Received a Certificate of Appreciation from Aptech for outstanding performance in a Web Designing project (Eyeonic Website), recognizing strong skills in website development and design.
+                            </p>
+                            </div>
+                        </div>
+
+                        <!-- Certificate 6 
+                        <div class="cert-slide">
+                            <div class="cert-img-box">
+                                <img src="Images/Certificates/cert6.jpg" alt="Certificate 6"
+                                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                                <div class="cert-img-fallback">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <span class="cert-tag">Certificate</span>
+                                <h3 class="cert-title">Add Your Certificate Title Here</h3>
+                                <p class="cert-desc">Replace this with your certificate description. Include the issuing
+                                    organization, skills covered, and any notable achievements or recognition received.</p>
+                            </div>
+                        </div>  -->
+
+                    </div>
+                </div>
+
+                <!-- Next Arrow -->
+                <button class="cert-arrow cert-arrow-next" id="certNext" aria-label="Next certificate">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Dot Indicators -->
+            <div class="cert-dots" id="certDots"></div>
         </div>
     </section>
 
@@ -575,6 +743,11 @@
             <p>&copy; <span id="year"></span> Umar Imran. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>

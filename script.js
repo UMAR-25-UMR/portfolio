@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function typeWriter() {
             const currentWord = words[wordIndex];
-            
+
             if (isDeleting) {
                 typeWriterElement.textContent = currentWord.substring(0, charIndex - 1);
                 charIndex--;
@@ -254,5 +254,63 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.disabled = false;
             }
         });
+    }   // ← closes if (contactForm)
+
+    // --- Certificate Slider ---
+    const certTrack = document.getElementById('certTrack');
+    const certPrev = document.getElementById('certPrev');
+    const certNext = document.getElementById('certNext');
+    const certDotsContainer = document.getElementById('certDots');
+
+    if (certTrack && certPrev && certNext && certDotsContainer) {
+        const slides = Array.from(certTrack.querySelectorAll('.cert-slide'));
+        let current = 0;
+        let autoPlay;
+
+        // Build dots
+        slides.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.className = 'cert-dot' + (i === 0 ? ' active' : '');
+            dot.setAttribute('aria-label', `Go to certificate ${i + 1}`);
+            dot.addEventListener('click', () => goTo(i));
+            certDotsContainer.appendChild(dot);
+        });
+
+        const dots = Array.from(certDotsContainer.querySelectorAll('.cert-dot'));
+
+        function goTo(index) {
+            current = (index + slides.length) % slides.length;
+            certTrack.style.transform = `translateX(-${current * 100}%)`;
+            dots.forEach((d, i) => d.classList.toggle('active', i === current));
+            certPrev.disabled = false;
+            certNext.disabled = false;
+        }
+
+        certPrev.addEventListener('click', () => { goTo(current - 1); resetAutoPlay(); });
+        certNext.addEventListener('click', () => { goTo(current + 1); resetAutoPlay(); });
+
+        // Auto-play every 4 s
+        function startAutoPlay() {
+            autoPlay = setInterval(() => goTo(current + 1), 4000);
+        }
+        function resetAutoPlay() {
+            clearInterval(autoPlay);
+            startAutoPlay();
+        }
+
+        // Pause on hover
+        certTrack.closest('.cert-slider-wrapper').addEventListener('mouseenter', () => clearInterval(autoPlay));
+        certTrack.closest('.cert-slider-wrapper').addEventListener('mouseleave', startAutoPlay);
+
+        // Touch / swipe support
+        let touchStartX = 0;
+        certTrack.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+        certTrack.addEventListener('touchend', e => {
+            const diff = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) { goTo(diff > 0 ? current + 1 : current - 1); resetAutoPlay(); }
+        }, { passive: true });
+
+        goTo(0);
+        startAutoPlay();
     }
 });
